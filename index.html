@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    </title>
+  </head>
+  <body>
+    <h1>Cookie Shop</h1>
+    <h3>Portland Food Cart</h3>
+    <p id="pdxSales">
+
+  </p>
+    <p><b>Sellwood Food Cart</b>
+      <ul>
+        <ls>
+        </ls>
+      </ul>
+    </p>
+  </body>
+  <script type="text/javascript">
+  console.log("It works!");
+  var portlandAirport = {
+    minSales: 6,
+    maxSales: 24,
+    averageSales: 1.2,
+    cookieHourlySales: function() {
+      // debugger;
+      var randomNum = Math.floor((Math.random() * (this.maxSales - this.minSales)) + this.minSales);
+      document.getElementById("pdxSales").innerHTML = "<ul><li>"+randomNum+"</li></ul>"
+    }
+  }
+  portlandAirport.cookieHourlySales()
+  // This is actually proper format that I found online for random/between/sets numbers
+  // Math.floor(Math.random() * (max-min)) + min
+
+  // var washingtonSquare = {
+  //   minSales: "11",
+  //   maxSales: "38",
+  //   averageSales: "1.9",
+  //   function cookieHourlySales(){
+  //     var randomNum = Math.floor((Math.random() * 38) + 1);
+  //   }
+  // };
+  // var sellwood = {
+  //   minSales: "20",
+  //   maxSales: "48",
+  //   averageSales: "3.3",
+  //   function cookieHourlySales (){
+  //     var randomNum = Math.floor((Math.random() * 48) + 1);}
+  // };
+  // var pioneerSquare = {
+  //   minSales: "17",
+  //   maxSales: "88",
+  //   averageSales: "5.2",
+  //   function cookieHourlySales (){
+  //     var randomNum = Math.floor((Math.random() * 88) + 1);}
+  // };
+  // var pearlDistrict = {
+  //   minSales: "3",
+  //   maxSales: "24",
+  //   averageSales: "2.6",
+  //   function cookieHourlySales (){
+  //     var randomNum = Math.floor((Math.random() * 24) + 1);}
+  // };
+  </script>
+</html>
